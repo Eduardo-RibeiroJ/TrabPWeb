@@ -53,3 +53,68 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2019-06-12 10:38:40,607 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2019-06-12 10:38:40,618 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-12 10:38:40,618 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024\src\test\resources
+2019-06-12 10:51:12,794 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-12 10:51:16,223 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.fatec.ra1721024:Ra1721024:0.0.1-SNAPSHOT @ C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024\pom.xml.
+2019-06-12 10:51:17,021 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.fatec.exercicio9:Exercicio9:0.0.1-SNAPSHOT @ C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Exercicio9\pom.xml.
+2019-06-12 10:51:20,603 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Ra1721024/src/main/java
+2019-06-12 10:51:20,604 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Ra1721024/src/main/resources
+2019-06-12 10:51:20,605 [Worker-32] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Ra1721024/src/test/java
+2019-06-12 10:51:20,780 [Worker-32] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure Ra1721024
+org.eclipse.m2e.wtp.MarkedException: Unable to configure Ra1721024
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2019-06-12 10:51:21,400 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Ra1721024
+2019-06-12 10:51:21,432 [Worker-32] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 8 sec
+2019-06-12 10:51:24,285 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:24,301 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-12 10:51:24,303 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:24,303 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Exercicio9\src\test\resources
+2019-06-12 10:51:25,339 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:25,340 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-06-12 10:51:25,351 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:25,352 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024\src\test\resources
+2019-06-12 10:51:25,352 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Ra1721024
+2019-06-12 10:51:25,369 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Ra1721024
+2019-06-12 10:51:25,377 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:38,231 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024
+2019-06-12 10:51:38,231 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2019-06-12 10:51:42,187 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:42,191 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-06-12 10:51:42,198 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:51:42,198 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024\src\test\resources
+2019-06-12 10:51:42,199 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Ra1721024
+2019-06-12 10:51:42,199 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Ra1721024
+2019-06-12 10:51:42,204 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:52:32,064 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024
+2019-06-12 10:52:32,064 [Worker-35] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2019-06-12 10:52:36,322 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:52:36,323 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-12 10:52:36,326 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:52:36,326 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Ra1721024\src\test\resources
