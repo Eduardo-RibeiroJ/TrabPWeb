@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cadastro de Permissao</title>
+</h:head>
+
+<h:body>
+	<h1>Cadastro de Permissao</h1>
+	<h:form id="cadastro">
+		<!--  se nao colocado o messages as mensagens de erro de validacao e conversao do form nao aparecerao -->
+		<h:messages />
+
+	<!--  campos hidden é oculto só serve para ser alimentado no banco diretamente  -->
+		<h:inputHidden value="#{permissaoBean.permissao.id}" />
+	
+		<h:outputLabel value="Usuario:" for="Usuario" />
+		<h:selectOneMenu id="codigo" style="width:210px"
+			value="#{permissaoBean.permissao.codigoUsuario}" required="true"
+			requiredMessage="Usuário deve ser selecionado">
+			<f:selectItem itemLabel=" - Selecione uma opção - " itemValue="" />
+			<f:selectItems value="#{usuarioBean.usuarios}"/>
+		</h:selectOneMenu>
+
+		<br style="clear: left;" />
+		<br />
+
+		<!--  validador size tamanho do quadrado, validateLength tamanho minimo e tamanho maximo -->
+
+		<h:outputLabel value="Opção Menu:" for="opcaoMenu" />
+		<h:inputText id="opcaoMenu" label="opcaoMenu" value="#{permissaoBean.permissao.opcaoMenu}" size="10">
+			<f:validateLength minimum="1" maximum="10" />
+		</h:inputText>
+
+
+		<br style="clear: left;" />
+		<br />
+
+		<legend>Escolher os direitos/permissões:</legend>
+		<br />
+		<h:outputText value="Inserir" />
+		<input type="checkbox" value="#{permissaoBean.permissao.inserir}" id="Inserir" name="Opcao"/>
+
+		<br style="clear: left;" />
+		<br />
+
+		<h:outputText value="Alterar" />
+		<input type="checkbox" value="#{permissaoBean.permissao.alterar}" id="Alterar"  name="Opcao" />
+
+
+		<br style="clear: left;" />
+		<br />
+
+		<h:outputText value="Excluir" />
+		<input type="checkbox" value="#{permissaoBean.permissao.excluir}" id="Excluir"  name="Opcao"/>
+
+
+		<br style="clear: left;" />
+		<br />
+
+		<h:outputText value="Visualizar" />
+		<input type="checkbox" name="#{permissaoBean.permissao.visualizar}" id="Visualizar"  />
+
+
+		<br style="clear: left;" />
+		<br />
+
+
+		<h:commandButton value="Salvar" action="#{permissaoBean.salvar}"  id="Salvar" />
+
+		<h:button value="Voltar" outcome="/index.xhtml" />
+		<br />
+	</h:form>
+</h:body>
+</html>

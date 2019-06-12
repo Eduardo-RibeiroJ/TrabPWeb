@@ -1,0 +1,13 @@
+2019-06-12 10:22:33,264 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.fatec.exercicio9:Exercicio9:0.0.1-SNAPSHOT @ C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Exercicio9\pom.xml.
+2019-06-12 10:22:37,554 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Exercicio9/src/main/java
+2019-06-12 10:22:37,555 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Exercicio9/src/main/resources
+2019-06-12 10:22:37,556 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Exercicio9/src/test/java
+2019-06-12 10:22:39,566 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2019-06-12 10:22:45,477 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:22:45,484 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-06-12 10:22:45,581 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:22:45,581 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Exercicio9\src\test\resources
+2019-06-12 10:31:19,771 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:31:19,846 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-06-12 10:31:19,936 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-12 10:31:19,937 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0030481721024\Desktop\TrabPWeb\workspace\Exercicio9\src\test\resources
