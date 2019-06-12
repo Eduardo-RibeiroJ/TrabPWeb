@@ -1,0 +1,23 @@
+CREATE TABLE EVENTO (
+IDEVENTO INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), 
+NOMEEVENTO VARCHAR(50) NOT NULL , 
+DTHREVENTO DATE NOT NULL , 
+LOCALEVENTO VARCHAR(100) NOT NULL , 
+PRIMARY KEY(IDEVENTO));
+
+CREATE TABLE PARTICIPANTE ( 
+IDPARTICIPANTE INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), 
+NOMEPARTICIPANTE VARCHAR(50) NOT NULL , 
+DTNASCPARTICIPANTE DATE NOT NULL , 
+EMPRESAPARTICIPANTE VARCHAR(50) NOT NULL , 
+EMAILPARTICIPANTE VARCHAR(100) NOT NULL , 
+CPFPARTICIPANTE VARCHAR(15) NOT NULL , 
+EVENTO_IDEVENTO INTEGER NOT NULL , 
+FOREIGN KEY(EVENTO_IDEVENTO) 
+REFERENCES EVENTO(IDEVENTO)); 
+
+** exemplos de insert manual 
+
+insert into evento (nomeevento,dthrevento,localevento) values ('show1','2018-11-13 10:00:00', 'praca eventos');
+insert into evento (nomeevento,dthrevento,localevento) values ('show2','2018-11-11 20:00:00', 'praca eventos');
+insert into participante (nomeparticipante,dtnascparticipante,empresaparticipante,emailparticipante,cpfparticipante, evento_idevento) values ('Denilce’,’1980-01-01','Fatec','denilce@gmail.com','99999’,1);
