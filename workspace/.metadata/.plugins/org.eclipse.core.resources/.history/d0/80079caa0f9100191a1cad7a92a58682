@@ -1,0 +1,36 @@
+body {
+	font: 24px "sans-serif";
+}
+
+
+a {
+	color: blue;
+	text-decoration: none;
+	
+}
+ul {
+	font: 24px "sans-serif";
+	list-style-type: square;
+}
+
+hr {
+	width: 500px;
+	text-align: right;
+	font-size: 50px;
+}
+
+.tb {
+	border: 1px solid black;
+}
+
+.header {
+	background-color: #CCFFFF;
+	border: 1px solid black;
+	font-weight: bold;
+	width: 260px;
+}
+
+.row {
+	text-align: center;
+	height: 10px;
+}

@@ -76,21 +76,5 @@ public class ParticipanteDAOHibernate implements ParticipanteDAO {
 			System.out.println("nao passou nada");
 			return null;}
 		}
-		
-	// usando hibernate query sql (parecida com sql)
-	// busca outros campos
-
-	public Participante buscarPorLogin(String login) {
-		this.session.getSessionFactory().openSession();
-		session.beginTransaction();
-		String hql = "select u from Participante u where u.login=:login";
-		Query consulta = this.session.createQuery(hql);
-		consulta.setString("login", login); // parametro
-		return (Participante) consulta.uniqueResult(); // como sabe-se que login é
-													// chave naturam, entao
-													// chama-se uniqueresult
-													// senao usava
-													// consulta.list()
-	}
 
 }

@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Ra1721024</name>
-	<description>Usando MVC e Hibernate</description>
+	<description></description>
 	<repositories>
 		<!-- É um diretório em seu PC onde os artefatos (arquivos jar) são armazenados 
 			após baixados de um repositório remoto na internet ou na intranet. Você também 

@@ -6,7 +6,7 @@ public class DAOFactory {
 
 	
 	public static ParticipanteDAO criaParticipanteDAO() {
-	ParticipanteDAOHibernate participanteDAO = new ParticipanteDAOHibernate();
+		ParticipanteDAOHibernate participanteDAO = new ParticipanteDAOHibernate();
 		      participanteDAO.setSession(HibernateUtil.getSessionFactory().getCurrentSession());
 		return participanteDAO;
 	}

@@ -10,7 +10,6 @@ public interface EventoDAO {
 	public void atualizar(Evento evento);	
 	public void excluir(Evento evento);
 	public Evento carregar(Integer codigo);
-	public Evento buscarPorParticipanteOpcao(Integer codigo, String opcao);
 	public List listar();
 
 }

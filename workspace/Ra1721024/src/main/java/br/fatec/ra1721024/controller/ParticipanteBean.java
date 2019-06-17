@@ -39,22 +39,12 @@ public class ParticipanteBean {
 		this.listaParticipantes = listaParticipantes;
 	}
 
-	private String confirmarSenha;
-
 	public Participante getParticipante() {
 		return participante;
 	}
 
 	public void setParticipante(Participante participante) {
 		this.participante = participante;
-	}
-
-	public String getConfirmarSenha() {
-		return confirmarSenha;
-	}
-
-	public void setConfirmarSenha(String confirmarSenha) {
-		this.confirmarSenha = confirmarSenha;
 	}
 
 	// porta de entrada do formulário
@@ -66,12 +56,11 @@ public class ParticipanteBean {
 
 	public String listagem() {
 		this.participante = new Participante();
-		return "publico/listagem"; // tenta exibir participantealt.xhtml
+		return "publico/listagemParticipantes"; // tenta exibir participantealt.xhtml
 	}
 
 	public String salvar() {
-		// facescontext adiciona as mensagens de erro que possam ser criadas
-		FacesContext context = FacesContext.getCurrentInstance();
+		// se deu certo
 		ParticipanteRN participanteRN = new ParticipanteRN();
 		participanteRN.salvar(this.participante);
 		return "participantesucesso"; // tenta abrir pagina /public/participantesucesso
@@ -87,7 +76,7 @@ public class ParticipanteBean {
 		List<Participante> participante2 = pais.listar();
 		// Alimenta Modelo
 		for (Participante c : participante2) {
-			SelectItem selecao = new SelectItem(c.getIdParticipante());
+			SelectItem selecao = new SelectItem(c.getCodigo(), c.getNome());
 			participanteItem.add(selecao);
 		}
 		return participanteItem;

@@ -23,14 +23,9 @@ public class ParticipanteRN {
 		return this.participanteDAO.carregar(codigo);
 	}
 
-	  // faz repasse metodo na classe DAO
-	public Participante buscarPorLogin(String login) {
-		return this.participanteDAO.buscarPorLogin(login);
-	}
-
 	// se nao existe salva, caso contrario atualiza
 	public void salvar(Participante participante) {
-		Integer codigo = participante.getIdParticipante();
+		Integer codigo = participante.getCodigo();
 		if (codigo == null || codigo == 0) {
 			this.participanteDAO.salvar(participante);
 		} else {

@@ -82,25 +82,5 @@ public class EventoDAOHibernate implements EventoDAO {
 			return null;
 		}
 	}
-
-	// usando hibernate query sql (parecida com sql)
-	// busca outros campos
-
-	public Evento buscarPorUsuarioOpcao(Integer codigo, String opcao) {
-		this.session.getSessionFactory().openSession();
-		session.beginTransaction();
-		String hql = "select u from Evento u where u.codigousuario=:codigo and u.opcaomenu=:opcao";
-		Query consulta = this.session.createQuery(hql);
-		consulta.setInteger("codigo", codigo); // parametro
-		consulta.setString("opcao", opcao); // parametro
-
-		return (Evento) consulta.uniqueResult(); 
-	}
-
-	@Override
-	public Evento buscarPorParticipanteOpcao(Integer codigo, String opcao) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 }

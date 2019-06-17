@@ -25,7 +25,7 @@ public class EventoRN {
 
 	// se nao existe salva, caso contrario atualiza
 	public void salvar(Evento evento) {
-		Integer id = evento.getIdEvento();
+		Integer id = evento.getId();
 		if (id == null || id == 0) {
 			this.eventoDAO.salvar(evento);
 		} else {

@@ -17,12 +17,12 @@ import br.fatec.ra1721024.model.Evento;
 @RequestScoped
 
 public class EventoBean {
-	
-	private List<SelectItem> eventoItem;
 
 	private Evento evento = new Evento(); // propriedade do tipo Evento
 
 	private DataModel<Evento> listaEventos;
+	
+	private List<SelectItem> eventoItem;
 
 	@SuppressWarnings("unchecked")
 	public DataModel<Evento> getListaEventos() {
@@ -46,7 +46,7 @@ public class EventoBean {
 	}
 
 		// porta de entrada do formulário
-	// preparar cadastro novo eventos
+	// preparar cadastro novo evento
 	public String novo() {
 	this.evento = new Evento();
 	/**	this.evento.setInserir(true);
@@ -60,7 +60,7 @@ public class EventoBean {
 
 	public String listagem() {
 		this.evento = new Evento();
-		return "publico/listagemp"; // tenta exibir evento.xhtml
+		return "publico/listagemEventos"; // tenta exibir eventoalt.xhtml
 	}
 
 	public String salvar() {
@@ -71,18 +71,28 @@ public class EventoBean {
 									// nao colocou o publico mas
 		// o contexto de salvar está em /publico
 	}
+
+	public Evento buscaPorLogin() {
+		EventoDAO dao = new EventoDAOHibernate();
+		Evento Permi = dao.carregar(evento.getId());
+		return  Permi;
+	//	return "publico/eventoalt"; // tenta exibir eventoalt.xhtml
+	
+	}
 	
 	public List<SelectItem> getEventos() {
 		// Cria objeto de modelo Faces
 		eventoItem = new ArrayList<SelectItem>();
 		// cria objeto DAO
 		EventoRN pais = new EventoRN();
-		List<Evento> evento = pais.listar();
+		List<Evento> evento2 = pais.listar();
 		// Alimenta Modelo
-		for (Evento e : evento) {
-			SelectItem selecao = new SelectItem(e.getIdEvento(), e.getNomeEvento());
+		for (Evento c : evento2) {
+			SelectItem selecao = new SelectItem(c.getId(), c.getNomeEvento());
 			eventoItem.add(selecao);
 		}
 		return eventoItem;
 	}
+
+
 }

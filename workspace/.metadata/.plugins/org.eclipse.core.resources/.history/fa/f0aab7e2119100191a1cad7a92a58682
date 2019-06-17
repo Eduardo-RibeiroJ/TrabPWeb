@@ -1,0 +1,40 @@
+body {
+	font: 24px "sans-serif";
+}
+
+
+a {
+	color: blue;
+	text-decoration: none;
+	
+}
+ul {
+	font: 24px "sans-serif";
+	list-style-type: square;
+}
+
+hr {
+	width: 500px;
+	text-align: right;
+	font-size: 50px;
+}
+
+.tb {
+	border: 1px solid black;
+	background-color: black;
+}
+
+.header {
+	background-color: #003399;
+	color: white;
+	font-weight: bold;
+}
+
+.row {
+	text-align: center;
+	background-color: #CCFFFF;
+}
+
+button {
+	color: red;
+}

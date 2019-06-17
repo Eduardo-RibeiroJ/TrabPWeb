@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="publico/css/estilo.css" />
+	<title>Projeto Final</title>
+</h:head>
+<h:body>
+
+	<h1>Projeto Final</h1>
+	<hr></hr>
+	<h:form>
+		
+		<ul>	
+				<li>
+					<h:commandLink value="Incluir Evento" action="#{eventoBean.novo}" />
+				</li>
+				<li>
+					<h:commandLink value="Incluir Participante" action="#{participanteBean.novo}" />
+				</li>
+				
+		</ul>
+				<hr></hr>
+		<ul>
+				
+				<li>
+					<h:commandLink value="Listar Participantes" action="#{participanteBean.listagem}" />
+				</li>
+		</ul>
+	</h:form>
+	<hr></hr>
+</h:body>
+</html>

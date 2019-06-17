@@ -10,7 +10,6 @@ public interface ParticipanteDAO {
 	public void atualizar(Participante participante);	
 	public void excluir(Participante participante);
 	public Participante carregar(Integer codigo);
-	public Participante buscarPorLogin(String login);
 	public List listar();
 
 }
